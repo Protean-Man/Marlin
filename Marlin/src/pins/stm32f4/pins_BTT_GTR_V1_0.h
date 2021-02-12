@@ -300,11 +300,11 @@
 //
 // Heaters / Fans
 //
-#define HEATER_0_PIN                        PB1   // Heater0
-#define HEATER_1_PIN                        PA1   // Heater1
-#define HEATER_2_PIN                        PB0   // Heater2
+#define HEATER_0_PIN                      PB1 // Heater0
+#define HEATER_1_PIN                      PA1 // Heater1
+#define HEATER_2_PIN                      PB0 // Heater2
 
-#define HEATER_3_PIN                        PD15  // Heater3
+#define HEATER_3_PIN                      PD15 // Heater3
 #define HEATER_4_PIN                        PD13  // Heater4
 #define HEATER_5_PIN                        PD12  // Heater5
 #define HEATER_6_PIN                        PE13  // Heater6
@@ -312,13 +312,13 @@
 
 #define HEATER_BED_PIN                      PA2   // Hotbed
 
-#define FAN_PIN                             PE5   // Fan0
-#define FAN1_PIN                            PE6   // Fan1
-#define FAN2_PIN                            PC8   // Fan2
+#define FAN_PIN                             PE9//PE5   // Fan0
+#define FAN1_PIN                            PE11//PE6   // Fan1
+#define FAN2_PIN                            PC9//PC8   // Fan2
 
-#define FAN3_PIN                            PI5   // Fan3
-#define FAN4_PIN                            PE9   // Fan4
-#define FAN5_PIN                            PE11  // Fan5
+#define FAN3_PIN                            PE14//PI5   // Fan3
+//#define FAN4_PIN                            PE9   // Fan4
+//#define FAN5_PIN                            PE11  // Fan5
 //#define FAN6_PIN                          PC9   // Fan6
 //#define FAN7_PIN                          PE14  // Fan7
 
