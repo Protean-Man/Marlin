@@ -256,10 +256,10 @@
 //#define ELECTROMAGNETIC_SWITCHING_TOOLHEAD
 
 #if ANY(SWITCHING_TOOLHEAD, MAGNETIC_SWITCHING_TOOLHEAD, ELECTROMAGNETIC_SWITCHING_TOOLHEAD)
-  #define SWITCHING_TOOLHEAD_Y_POS          451         // (mm) Y position of the toolhead dock
+  #define SWITCHING_TOOLHEAD_Y_POS          381//451         // (mm) Y position of the toolhead dock
   #define SWITCHING_TOOLHEAD_Y_SECURITY      90         // (mm) Security distance Y axis
   #define SWITCHING_TOOLHEAD_Y_CLEAR         90         // (mm) Minimum distance from dock for unobstructed X axis
-  #define SWITCHING_TOOLHEAD_X_POS          { 20, 182, 200, 250 }  // (mm) X positions for parking the extruders
+  #define SWITCHING_TOOLHEAD_X_POS          { -30, 132, 150, 200 }//{ 20, 182, 200, 250 }  //X= -50   Y= -70   // (mm) X positions for parking the extruders
   #if ENABLED(SWITCHING_TOOLHEAD)
     #define SWITCHING_TOOLHEAD_SERVO_NR       0         // Index of the servo connector
     #define SWITCHING_TOOLHEAD_SERVO_ANGLES { 90, 0 }  // (degrees) Angles for Lock, Unlock
@@ -1160,11 +1160,11 @@
 #define Y_BED_SIZE 310
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
-#define X_MIN_POS 0
-#define Y_MIN_POS 0
+#define X_MIN_POS -70
+#define Y_MIN_POS -50
 #define Z_MIN_POS 0
-#define X_MAX_POS 440//X_BED_SIZE + 200
-#define Y_MAX_POS 452//Y_BED_SIZE + 200
+#define X_MAX_POS X_MIN_POS + X_BED_SIZE + 100//440//X_BED_SIZE + 200
+#define Y_MAX_POS Y_MIN_POS + Y_BED_SIZE + 200//452 //Y_BED_SIZE + 200
 #define Z_MAX_POS 400
 
 /**
